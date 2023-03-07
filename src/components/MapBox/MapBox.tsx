@@ -36,7 +36,7 @@ const MapBox: FunctionComponent = () => {
 
         const mapboxMap = new mapboxgl.Map({
             container: node,
-            accessToken: 'pk.eyJ1IjoiYmF0a2Ftb3Nobm8iLCJhIjoiY2tncXgyNWtkMHB6YTJzbDhpb2NnaG9lMSJ9.Si0BkgsQqhfjr7EBLDkuWA',
+            accessToken: process.env.REACT_APP_MAPBOX_TOKEN,
             style: 'mapbox://styles/mapbox/streets-v12',
             center: [lng, lat],
             zoom: zoom,
